@@ -1,0 +1,160 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+
+.contact__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.contact__heading {
+  font-size: clamp(2.4rem, 8vw, 7rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  max-width: 16ch;
+  margin-bottom: 1.5rem;
+}
+
+.contact__heading .word-mask {
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.contact__sub {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 44ch;
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.contact__email {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  gap: clamp(0.8rem, 2vw, 1.5rem);
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line-strong);
+  margin-bottom: clamp(3rem, 7vw, 5.5rem);
+  transition: border-color 0.4s var(--ease);
+}
+
+.contact__email:hover {
+  border-color: var(--accent);
+}
+
+.contact__email-text {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 4.5vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+.contact__email-icon {
+  display: grid;
+  place-items: center;
+  width: clamp(38px, 6vw, 54px);
+  height: clamp(38px, 6vw, 54px);
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  flex-shrink: 0;
+  transition: background-color 0.4s var(--ease), color 0.4s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+.contact__email:hover .contact__email-icon {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  transform: rotate(45deg);
+}
+
+.contact__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+.contact__socials-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.contact__socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2.2rem;
+}
+
+.contact__socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 44px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.contact__socials a:hover {
+  color: var(--text);
+}
+
+.contact__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.84rem;
+  color: var(--text-dim);
+}
+
+.contact__top {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.contact__top:hover {
+  color: var(--text);
+}
+
+/* Giant faded wordmark behind the footer bottom */
+.contact__wordmark {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.5rem, 13vw, 12rem);
+  line-height: 0.78;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  color: var(--text);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .contact__bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

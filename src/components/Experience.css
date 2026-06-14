@@ -1,0 +1,65 @@
+.exp__list {
+  border-top: 1px solid var(--line);
+}
+
+.exp__row {
+  display: grid;
+  grid-template-columns: 0.7fr 1.1fr 1.5fr;
+  gap: 2rem;
+  align-items: start;
+  padding-block: clamp(1.6rem, 4vw, 2.6rem);
+  border-bottom: 1px solid var(--line);
+  transition: padding-left 0.45s var(--ease), background-color 0.45s var(--ease);
+}
+
+.exp__row:hover {
+  padding-left: 1.2rem;
+}
+
+.exp__years {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+}
+
+.exp__dash {
+  color: var(--text-dim);
+}
+
+.exp__role {
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.exp__company {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.exp__desc {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.62;
+  max-width: 46ch;
+}
+
+@media (max-width: 900px) {
+  .exp__row {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  .exp__row:hover {
+    padding-left: 0.5rem;
+  }
+  .exp__years {
+    order: -1;
+    font-size: 0.85rem;
+  }
+}

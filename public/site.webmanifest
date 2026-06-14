@@ -1,0 +1,13 @@
+{
+  "name": "Tri Aditya Agustiawan",
+  "short_name": "TA",
+  "description": "WordPress & Front End Developer based in Denpasar.",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ],
+  "theme_color": "#0a0a0b",
+  "background_color": "#0a0a0b",
+  "display": "standalone",
+  "start_url": "/"
+}

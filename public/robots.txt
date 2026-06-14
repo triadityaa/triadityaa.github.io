@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://triadityaa.github.io/sitemap.xml

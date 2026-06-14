@@ -1,0 +1,75 @@
+.edu__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vw, 3.5rem);
+}
+
+.edu__item {
+  padding: clamp(1.6rem, 4vw, 2.6rem);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.edu__item:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-4px);
+}
+
+.edu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.edu__school {
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+  max-width: 24ch;
+}
+
+.edu__degree {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.edu__period {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.edu__achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.edu__achievements li {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.62;
+  max-width: 70ch;
+}
+
+.edu__bullet {
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .edu__top {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}

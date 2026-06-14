@@ -1,0 +1,79 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.pre-inner {
+  padding-inline: var(--pad-x);
+}
+
+.pre-word {
+  font-size: clamp(2.5rem, 9vw, 7rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text);
+  text-align: center;
+}
+
+.word-line-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.pre-word .word-line {
+  display: inline-block;
+  transform: translateY(110%);
+  will-change: transform;
+}
+
+.pre-meta {
+  position: absolute;
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  left: var(--pad-x);
+  right: var(--pad-x);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: var(--font-display);
+}
+
+.pre-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pre-count {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 500;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.pre-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--line);
+}
+
+.pre-bar-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}

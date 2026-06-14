@@ -1,0 +1,63 @@
+.skills .section-head {
+  margin-bottom: clamp(1.1rem, 2.4vw, 1.9rem);
+}
+
+.skills__intro {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--text-muted);
+  max-width: 34ch;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  padding-block: clamp(1.3rem, 3vw, 2rem);
+  border-top: 1px solid var(--line);
+}
+
+.skill:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.skill__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.skill__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.6vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.skill__pct {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.skill__bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: var(--line);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+.skill__fill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--text-dim), var(--accent));
+  border-radius: var(--r-pill);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
