@@ -62,7 +62,7 @@ export const ui = {
       contact: 'Contact',
     },
     hero: {
-      tagline: 'WordPress & Front End Developer',
+      tagline: 'Web, Front End & Mobile App Developer',
       intro:
         'I build clean, modern websites in Denpasar — pages that look good and work even better.',
       roles: ['WordPress Developer', 'Front End Developer', 'Mobile App Developer'],
@@ -70,8 +70,8 @@ export const ui = {
     about: {
       lead: 'Turning ideas into clean, usable products — one well-built page at a time.',
       paragraphs: [
-        'I’m a WordPress Developer at Fanaloka — a Bali-based agency building websites that make an impact for non-profits and social enterprises. Before Fanaloka I spent nearly two years at Brave Factor, shipping pages for clients across the US and beyond, each one reviewed by QA for both how it looks and how it works. I’m a Computer Science (S.Kom) graduate of ITB STIKOM Bali, where I also led public relations for the HIMATOGRAPHY student unit and represented my campus in the national PHP2D program.',
-        'Beyond WordPress, I build Android apps — a craft I sharpened during the BANGKIT 2021 bootcamp run by KEMENRISTEK-DIKBUD together with Google and several Indonesian unicorns. I enjoy helping people with the skills I have.',
+        'I’m a web and WordPress developer at Fanaloka — a Bali-based agency building websites that make an impact for non-profits and social enterprises. Before Fanaloka I spent nearly two years at Brave Factor, shipping pages for clients across the US and beyond, each one reviewed by QA for both how it looks and how it works. I’m a Computer Science (S.Kom) graduate of ITB STIKOM Bali, where I also led public relations for the HIMATOGRAPHY student unit and represented my campus in the national PHP2D program.',
+        'Beyond WordPress and front-end work, I build Android mobile apps — a craft I sharpened during the BANGKIT 2021 bootcamp run by KEMENRISTEK-DIKBUD together with Google and several Indonesian unicorns. I’m open to freelance and full-time web development projects, and I enjoy helping people with the skills I have.',
       ],
       facts: [
         { label: 'Currently', value: 'WordPress Dev @ Fanaloka' },
@@ -118,7 +118,7 @@ export const ui = {
       contact: 'Kontak',
     },
     hero: {
-      tagline: 'WordPress & Front End Developer',
+      tagline: 'Web, Front End & Mobile App Developer',
       intro:
         'Saya membangun website yang rapi dan modern di Denpasar — halaman yang enak dilihat dan berfungsi dengan baik.',
       roles: ['WordPress Developer', 'Front End Developer', 'Mobile App Developer'],
@@ -126,8 +126,8 @@ export const ui = {
     about: {
       lead: 'Mengubah ide menjadi produk yang rapi dan mudah digunakan — satu halaman yang dibangun dengan baik.',
       paragraphs: [
-        'Saya seorang WordPress Developer di Fanaloka — agensi berbasis di Bali yang membangun website berdampak untuk organisasi nirlaba dan social enterprise. Sebelum Fanaloka, hampir dua tahun saya di Brave Factor, merilis halaman untuk klien di AS dan berbagai negara, masing-masing ditinjau QA dari sisi tampilan sekaligus fungsinya. Saya lulusan Sarjana Komputer (S.Kom) ITB STIKOM Bali, di mana saya juga menjadi Humas di UKM HIMATOGRAPHY dan mewakili kampus dalam program pengabdian masyarakat nasional PHP2D.',
-        'Selain WordPress, saya juga mengembangkan aplikasi Android — kemampuan yang terasah saat mengikuti bootcamp BANGKIT 2021 yang diselenggarakan KEMENRISTEK-DIKBUD bersama Google dan beberapa unicorn Indonesia. Saya senang membantu orang dengan kemampuan yang saya miliki.',
+        'Saya seorang web & WordPress developer di Fanaloka — agensi berbasis di Bali yang membangun website berdampak untuk organisasi nirlaba dan social enterprise. Sebelum Fanaloka, hampir dua tahun saya di Brave Factor, merilis halaman untuk klien di AS dan berbagai negara, masing-masing ditinjau QA dari sisi tampilan sekaligus fungsinya. Saya lulusan Sarjana Komputer (S.Kom) ITB STIKOM Bali, di mana saya juga menjadi Humas di UKM HIMATOGRAPHY dan mewakili kampus dalam program pengabdian masyarakat nasional PHP2D.',
+        'Selain WordPress dan front-end, saya juga mengembangkan aplikasi mobile Android — kemampuan yang terasah saat mengikuti bootcamp BANGKIT 2021 yang diselenggarakan KEMENRISTEK-DIKBUD bersama Google dan beberapa unicorn Indonesia. Saya terbuka untuk proyek web development freelance maupun full-time, dan senang membantu orang dengan kemampuan yang saya miliki.',
       ],
       facts: [
         { label: 'Saat ini', value: 'WordPress Dev @ Fanaloka' },
