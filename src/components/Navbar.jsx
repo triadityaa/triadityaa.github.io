@@ -7,6 +7,7 @@ const LINKS = [
   { key: 'home', href: '#hero' },
   { key: 'about', href: '#about' },
   { key: 'work', href: '#work' },
+  { key: 'product', href: '#product' },
   { key: 'experience', href: '#experience' },
   { key: 'education', href: '#education' },
   { key: 'contact', href: '#contact' },

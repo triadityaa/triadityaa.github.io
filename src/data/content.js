@@ -46,6 +46,7 @@ export const ui = {
       home: 'Home',
       about: 'About',
       work: 'Work',
+      product: 'Product',
       experience: 'Experience',
       education: 'Education',
       contact: 'Contact',
@@ -56,6 +57,7 @@ export const ui = {
     sections: {
       about: 'About',
       work: 'Selected Work',
+      product: 'Product',
       experience: 'Experience',
       education: 'Education',
       skills: 'Skills',
@@ -102,6 +104,7 @@ export const ui = {
       home: 'Beranda',
       about: 'Tentang',
       work: 'Karya',
+      product: 'Produk',
       experience: 'Pengalaman',
       education: 'Pendidikan',
       contact: 'Kontak',
@@ -112,6 +115,7 @@ export const ui = {
     sections: {
       about: 'Tentang',
       work: 'Karya Pilihan',
+      product: 'Produk',
       experience: 'Pengalaman',
       education: 'Pendidikan',
       skills: 'Keahlian',
@@ -318,6 +322,24 @@ export const moreProjects = [
     },
   },
 ]
+
+/** Featured SaaS product — highlighted in its own section. */
+export const product = {
+  name: 'Forge',
+  year: '2026',
+  link: 'https://forge-web-xi.vercel.app/',
+  image: '/projects/forge.webp',
+  role: { en: 'Creator & Developer', id: 'Kreator & Developer' },
+  tagline: {
+    en: 'Train smarter. Eat better. All in one.',
+    id: 'Latihan lebih cerdas. Makan lebih baik. Semua dalam satu.',
+  },
+  description: {
+    en: 'A SaaS fitness & nutrition platform I built end-to-end — GPS workout tracking, AI photo meal scanning (Gemini), and a personal AI coach in a single app that syncs across phone, watch, and web.',
+    id: 'Platform SaaS fitness & nutrisi yang saya bangun end-to-end — pelacakan latihan GPS, pemindaian makanan lewat foto dengan AI (Gemini), dan pelatih AI personal dalam satu aplikasi yang tersinkron di ponsel, jam, dan web.',
+  },
+  tags: ['SaaS', 'GPS Tracking', 'AI · Gemini', 'iOS · Android · Web'],
+}
 
 export const experience = [
   {

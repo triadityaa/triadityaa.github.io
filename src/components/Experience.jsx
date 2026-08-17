@@ -39,7 +39,7 @@ export default function Experience() {
       <div className="container">
         <div className="section-head">
           <h2 className="section-label">{t.sections.experience}</h2>
-          <span className="section-index">/ 03</span>
+          <span className="section-index">/ 04</span>
         </div>
 
         <div className="exp__list">

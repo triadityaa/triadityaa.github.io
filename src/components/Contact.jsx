@@ -62,7 +62,7 @@ export default function Contact({ scrollTo }) {
       <div className="container contact__inner">
         <div className="section-head">
           <span className="section-label">{t.sections.contact}</span>
-          <span className="section-index">/ 06</span>
+          <span className="section-index">/ 07</span>
         </div>
 
         <h2 className="contact__heading display" key={lang}>

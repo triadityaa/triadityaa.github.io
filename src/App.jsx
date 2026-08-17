@@ -10,6 +10,7 @@ import Hero from './components/Hero.jsx'
 import Marquee from './components/Marquee.jsx'
 import About from './components/About.jsx'
 import Work from './components/Work.jsx'
+import Product from './components/Product.jsx'
 import Experience from './components/Experience.jsx'
 import Education from './components/Education.jsx'
 import Skills from './components/Skills.jsx'
@@ -87,6 +88,7 @@ export default function App() {
         <Marquee />
         <About />
         <Work />
+        <Product />
         <Experience />
         <Education />
         <Skills />

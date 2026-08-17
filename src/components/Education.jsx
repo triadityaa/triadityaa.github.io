@@ -37,7 +37,7 @@ export default function Education() {
       <div className="container">
         <div className="section-head">
           <h2 className="section-label">{t.sections.education}</h2>
-          <span className="section-index">/ 04</span>
+          <span className="section-index">/ 05</span>
         </div>
 
         <div className="edu__list">

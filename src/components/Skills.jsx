@@ -71,7 +71,7 @@ export default function Skills() {
       <div className="container">
         <div className="section-head">
           <h2 className="section-label">{t.sections.skills}</h2>
-          <span className="section-index">/ 05</span>
+          <span className="section-index">/ 06</span>
         </div>
         <p className="skills__intro">{t.skillsIntro}</p>
 
