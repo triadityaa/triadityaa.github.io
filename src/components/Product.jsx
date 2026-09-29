@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, prefersReducedMotion } from '../lib/gsap.js'
 import { useLanguage } from '../context/LanguageContext.jsx'
-import { product } from '../data/content.js'
+import { products } from '../data/content.js'
 import './Product.css'
 
 function ArrowUpRight() {
@@ -26,13 +26,13 @@ export default function Product() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) return
-      gsap.from('.product .section-head, .product__media, .product__body > *', {
+      gsap.from('.product .section-head, .product__item > *', {
         y: 40,
         autoAlpha: 0,
         duration: 0.9,
         ease: 'power3.out',
         stagger: 0.1,
-        scrollTrigger: { trigger: root.current, start: 'top 75%' },
+        scrollTrigger: { trigger: root.current, start: 'top 78%' },
       })
     },
     { scope: root, dependencies: [] }
@@ -46,42 +46,52 @@ export default function Product() {
           <span className="section-index">/ 03</span>
         </div>
 
-        <div className="product__grid">
-          <a
-            className="product__media"
-            href={product.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`${product.name} — ${t.visitSite} (opens in a new tab)`}
-            data-cursor
-          >
-            <img
-              src={product.image}
-              alt={`${product.name} website`}
-              loading="lazy"
-              decoding="async"
-              width="1200"
-              height="880"
-            />
-            <span className="product__media-arrow">
-              <ArrowUpRight />
-            </span>
-          </a>
+        <div className="product__list">
+          {products.map((p) => (
+            <div className="product__item" key={p.name}>
+              <a
+                className="product__media"
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${p.name} — ${t.visitSite} (opens in a new tab)`}
+                data-cursor
+              >
+                <img
+                  src={p.image}
+                  alt={`${p.name} website`}
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="880"
+                />
+                <span className="product__media-arrow">
+                  <ArrowUpRight />
+                </span>
+              </a>
 
-          <div className="product__body">
-            <span className="product__eyebrow">{product.role[lang]}</span>
-            <h3 className="product__name display">{product.name}</h3>
-            <p className="product__tagline">{product.tagline[lang]}</p>
-            <p className="product__desc">{product.description[lang]}</p>
-            <ul className="product__tags">
-              {product.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-            <a className="product__cta" href={product.link} target="_blank" rel="noreferrer" data-cursor>
-              {t.visitSite} <ArrowUpRight />
-            </a>
-          </div>
+              <div className="product__body">
+                <span className="product__eyebrow">{p.role[lang]}</span>
+                <h3 className="product__name display">{p.name}</h3>
+                <p className="product__tagline">{p.tagline[lang]}</p>
+                <p className="product__desc">{p.description[lang]}</p>
+                <ul className="product__tags">
+                  {p.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+                <a
+                  className="product__cta"
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-cursor
+                >
+                  {t.visitSite} <ArrowUpRight />
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

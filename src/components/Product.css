@@ -1,8 +1,19 @@
-.product__grid {
+.product__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 8vw, 6rem);
+}
+
+.product__item {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
+}
+
+/* Alternate image side for rhythm */
+.product__item:nth-child(even) .product__media {
+  order: 2;
 }
 
 /* media — mirrors the featured Work card treatment */
@@ -137,8 +148,11 @@
 }
 
 @media (max-width: 900px) {
-  .product__grid {
+  .product__item {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .product__item:nth-child(even) .product__media {
+    order: 0;
   }
 }
